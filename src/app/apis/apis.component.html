@@ -1,0 +1,80 @@
+
+<div class = "back">
+    <app-nav></app-nav>
+
+    
+  <!-- <div class = "container ">
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+     
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div> -->
+    <div class = "container">
+        <div class ="row">
+
+        </div>
+      <div class ="row">
+          <div class = "col-md-5 holder">
+              <button (click)="previousItems()"><a class="btn-floating btn-lg btn-li mx-1">
+                  <i class="fa fa-chevron-circle-left fa-2x"></i>
+              </a>
+              </button>
+            </div>
+          <div class = "col-md-3">
+          <h3>{{heading}}</h3>
+        </div>
+          <div class = "col-md-4">
+            <button (click) ="nextItems()"> <a class="btn-floating btn-lg btn-li mx-1">
+                  <i class="fa fa-chevron-circle-right fa-2x"></i>
+              </a></button> 
+            </div>
+          <div class ="row">
+        <div class = "col-md-4 cols">
+          <div class="card shape ">
+            <img class="card-img-top image" src="{{url1}}" alt="Card image" style="width:100%">
+            <div class="card-body cardback">
+              <h4 class="card-title text-center">{{title1}}</h4>
+              <p class="card-text">{{description1}}</p>
+              <a href="https://github.com/Kerschel/Java-FX-Chat-messenger-app-UDP" class="btn btn-primary code">See Code <i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-md-4 cols">
+            <div class="card shape">
+              <img class="card-img-top image" src="{{url2}}" alt="Card image" style="width:100%">
+              <div class="card-body cardback">
+                <h4 class="card-title text-center" >{{title2}}</h4>
+                <p class="card-text">{{description2}}</p>
+                <a href="https://github.com/Kerschel/ATMBankMachine" class="btn btn-primary code">See Code <i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-md-4 cols">
+              <div class="card shape">
+                <img class="card-img-top image" src="{{url3}}" alt="Card image" style="width:100%">
+                <div class="card-body cardback">
+                  <h4 class="card-title text-center">{{title3}}</h4>
+                  <p class="card-text ">{{description3}}</p>              
+                  <a href="https://github.com/Kerschel/Inventory-Management-using-RMI" class="btn btn-primary code ">See Code <i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+
+           
+            
+          </div>
+      </div>
+    </div>
+    
+</div>
